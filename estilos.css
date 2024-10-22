@@ -198,10 +198,30 @@ details {
     max-width: 1280px;
 }
 
+details summary {
+    transition: margin 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    margin-bottom: -20px;
+}
+
+details[open] summary {
+    margin-bottom: 10px;
+}
+
+@keyframes desplegable {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 summary {
     border-top: 3px solid #000;
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 
 summary h2 {
@@ -226,19 +246,43 @@ summary h3 {
     margin-top: 10px;
 }
 
+summary a {
+    margin-top: 14px;
+}
+
 .actividad,
 .actividades,
 .hora {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+time {
+    color: #000;
+    font-family: "Barlow Condensed";
+    font-size: 4.9rem;
+    font-weight: 300;
+}
+
+.hora {
+    width: 230px;
+}
+
+.hora div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
 }
 
 .hora p {
-    color: #000;
-    font-family: "Barlow Condensed";
-    font-size: 5rem;
-    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid #000;
+    padding: 4px 0;
 }
 
 .actividades svg {
@@ -253,6 +297,7 @@ summary h3 {
     align-items: flex-start;
     gap: 10px;
     border-left: 3px solid #000;
+    max-width: 330px;
 }
 
 .depto {
@@ -263,8 +308,9 @@ summary h3 {
 }
 
 .nombre-charla {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 600;
+    text-wrap: pretty;
 }
 
 .nombre-charla span {
@@ -272,14 +318,18 @@ summary h3 {
 }
 
 .expositor {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 300;
 }
 
 .lugar {
     color: #4D4D4D;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 /****** FIN MAIN CRONOGRAMA *****/
+
+/****** ANIMACION DESPLEGABLE *****/
+
