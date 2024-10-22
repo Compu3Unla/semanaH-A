@@ -1,0 +1,108 @@
+
+body {
+    background: #F0F0F0;
+	overflow: hidden;
+}
+
+body::before, 
+body::after {
+	content: "";
+	width: 70vmax;
+	height: 70vmax;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.07);
+	animation: morph 30s linear infinite alternate, spin 20s linear infinite, gradiente1 60s linear infinite alternate;
+    transition: background 1s;
+	z-index: 1;
+	will-change: border-radius, transform;
+	transform-origin: 55% 55%;
+	pointer-events: none; 
+    filter: blur(100px);
+}
+	
+body::after {
+    width: 50vmin;
+    height: 50vmin;
+    left: auto;
+    right: -10vmin;
+    top: auto;
+    bottom: 0;
+    animation: morph 25s linear infinite alternate-reverse, spin 26s linear infinite reverse, gradiente2 60s linear infinite alternate;
+    transform-origin: 20% 20%; 
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 20% 20% 80% 50% / 80% 30% 60% 20%; 
+    left: 70vmax;
+}
+  100% {
+    border-radius: 40% 60%; 
+    left: -40vmax;
+} 
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn); 
+  }
+}
+
+  @keyframes gradiente1 {
+    from {
+        background: #FDC24E;
+    }
+    20% {
+        background: #F46516;
+    }
+    30% {
+        background: #F0F0F0;
+    }
+    40% {
+        background: #AC2FD8;
+    }
+    50% {
+        background: #E86DE8;
+    }
+    60% {
+        background: #F0F0F0;
+    }
+    70% {
+        background: #0394E8;
+    }
+    80% {
+        background: #5BF6F8;
+    }
+    to {
+        background: #F0F0F0;
+    }
+}
+@keyframes gradiente2 {
+    from {
+        background: #F46516;
+    }
+    20% {
+        background: #FDC24E;
+    }
+    30% {
+        background: #F0F0F0;
+    }
+    40% {
+        background: #E86DE8;
+    }
+    50% {
+        background: #AC2FD8;
+    }
+    60% {
+        background: #F0F0F0;
+    }
+    70% {
+        background: #5BF6F8;
+    }
+    80% {
+        background: #0394E8;
+    }
+    to {
+        background: #F0F0F0;
+    }
+}
