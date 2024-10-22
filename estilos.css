@@ -60,7 +60,7 @@ nav a {
 /****** MAIN ******/
 main {
     position: relative;
-    z-index: 10;
+    z-index: 9;
 }
 
 /****** FOOTER *****/
@@ -87,4 +87,15 @@ footer {
     display: flex;
     align-items: center;
     gap: 30px;
+}
+
+/****** MAIN IFRAMES *****/
+
+#iframes {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
 }

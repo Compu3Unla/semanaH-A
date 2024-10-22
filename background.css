@@ -2,6 +2,7 @@
 body {
     background: #F0F0F0;
 	overflow-x: hidden;
+    background-attachment: fixed;
 }
 
 body::before, 
