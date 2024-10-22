@@ -1,16 +1,21 @@
 /* CSS DOCUMENT */
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 a {
     text-decoration: none;
 }
 
+body {
+    font-family: Barlow;
+}
 
 
 /******* NAV ******/
@@ -47,7 +52,6 @@ nav a {
     display: flex;
     padding: 0px 30px;
     color: #F0F0F0;
-    font-family: Barlow;
     font-size: 2rem;
     font-style: normal;
     font-weight: 600;
@@ -92,10 +96,113 @@ footer {
 /****** MAIN IFRAMES *****/
 
 #iframes {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
     padding: 30px;
 }
+
+/****** FIN MAIN IFRAMES *****/
+
+/****** MAIN CRONOGRAMA *****/
+
+#cronograma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+/****** DESPLEGABLES *****/
+details {
+    width: 100%;
+    max-width: 1280px;
+}
+
+summary {
+    border-top: 3px solid #000;
+    display: flex;
+    align-items: center;
+}
+
+summary h2 {
+    font-size: 7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+summary h3 {
+    display: flex;
+    padding: 10px 25px;
+    align-items: center;
+    border-radius: 30px;
+    background: #000;
+    color: #F0F0F0;
+    font-family: Barlow;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.065rem;
+    margin-top: 10px;
+}
+
+.actividad,
+.actividades,
+.hora {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hora p {
+    color: #000;
+    font-family: "Barlow Condensed";
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+.actividades svg {
+    padding-top: 22px;
+}
+
+.info {
+    margin-top: 22px;
+    display: flex;
+    padding: 0 20px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-left: 3px solid #000;
+}
+
+.depto {
+    color: #521D66;
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: 0.08rem;
+}
+
+.nombre-charla {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nombre-charla span {
+    font-weight: 400;
+}
+
+.expositor {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.lugar {
+    color: #4D4D4D;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/****** FIN MAIN CRONOGRAMA *****/
