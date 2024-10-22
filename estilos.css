@@ -18,6 +18,7 @@ a {
 header {
     position: sticky;
     top: 0;
+    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,7 +57,11 @@ nav a {
 
 /****** FIN NAV *****/
 
-
+/****** MAIN ******/
+main {
+    position: relative;
+    z-index: 10;
+}
 
 /****** FOOTER *****/
 
@@ -64,6 +69,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 10;
 }
 
 .footer-container {
