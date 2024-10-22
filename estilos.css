@@ -17,7 +17,6 @@ body {
     font-family: Barlow;
 }
 
-
 /******* NAV ******/
 
 header {
@@ -28,7 +27,7 @@ header {
     justify-content: center;
     align-items: center;
     color: white;
-    padding-top: 10px
+    margin-top: 50px
 }
 
 header div {
@@ -67,6 +66,83 @@ main {
     z-index: 9;
 }
 
+.index-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filas-index {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.index-main section {
+    width: 100%;
+    max-width: 1280px;
+}
+
+.div-index {
+    display: flex;
+    width: 363px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.div-index p {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 3px solid #000;
+    color: #000;
+    font-family: Barlow;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.div-index img {
+    display: flex;
+    padding: 16px 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 50px;
+    border: 3px solid #000;
+}
+
+.fecha {
+    display: flex;
+    padding: 16px 0px;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 37px;
+    border: 3px solid #000;
+    color: #000;
+    font-family: Barlow;
+    font-size: 31.714px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.titulo-index {
+    color: #000;
+    font-family: Barlow;
+    font-size: 160px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+
+
 /****** FOOTER *****/
 
 footer {
@@ -75,6 +151,7 @@ footer {
     align-items: center;
     position: relative;
     z-index: 10;
+    margin-top: 50px;
 }
 
 .footer-container {
