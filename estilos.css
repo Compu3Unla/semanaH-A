@@ -27,7 +27,9 @@ header {
     justify-content: center;
     align-items: center;
     color: white;
-    margin-top: 50px
+    margin-top: 50px;
+    gap: 10px;
+    flex-direction: column;
 }
 
 header div {
@@ -51,11 +53,37 @@ nav a {
     display: flex;
     padding: 0px 30px;
     color: #F0F0F0;
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-style: normal;
     font-weight: 600;
     font-variant: small-caps;
     justify-content: center;
+    text-transform: uppercase;
+}
+
+header ul {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header li {
+    display: flex;
+    padding: 6px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 22.649px;
+    border: 0.755px solid #000;
+    background: #F0F0F0;
+}
+
+header li p {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 1px;
 }
 
 /****** FIN NAV *****/
@@ -81,6 +109,7 @@ main {
 .index-main section {
     width: 100%;
     max-width: 1280px;
+    margin: 30px 0;
 }
 
 .div-index {
@@ -90,6 +119,7 @@ main {
     align-content: flex-start;
     gap: 10px;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .div-index p {
@@ -140,7 +170,12 @@ main {
     text-transform: uppercase;
 }
 
-
+h2 {
+    font-size: 10rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
 
 
 /****** FOOTER *****/
@@ -302,7 +337,7 @@ time {
 
 .depto {
     color: #521D66;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 700;
     letter-spacing: 0.08rem;
 }
@@ -332,4 +367,3 @@ time {
 /****** FIN MAIN CRONOGRAMA *****/
 
 /****** ANIMACION DESPLEGABLE *****/
-
