@@ -17,6 +17,20 @@ body {
     font-family: Barlow;
 }
 
+@keyframes iconos-girando {
+    from {
+        transform: rotate(1deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animacion-girando {
+    animation: iconos-girando 50s infinite;
+}
+
 /******* NAV ******/
 
 header {
@@ -41,12 +55,14 @@ header div {
     align-items: center;
     border-radius: 55px;
     background: #000;
-    height: 64px;
+    height: 50px;
 }
 
 nav {
     display: flex;
     gap: 20px;
+    align-items: center;
+    align-self: stretch;
 }
 
 nav a {
@@ -56,9 +72,17 @@ nav a {
     font-size: 1.3rem;
     font-style: normal;
     font-weight: 600;
-    font-variant: small-caps;
     justify-content: center;
     text-transform: uppercase;
+    transition: all 0.3s ease;
+    align-self: stretch;
+    align-items: center;
+    border-radius: 57px;
+}
+
+nav a:hover {
+    background-color: #F0F0F0;
+    color: #000;
 }
 
 header ul {
