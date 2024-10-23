@@ -3,6 +3,7 @@ body {
     background: #F0F0F0;
 	overflow-x: hidden;
     background-attachment: fixed;
+    position: relative;
 }
 
 body::before, 
@@ -10,7 +11,7 @@ body::after {
 	content: "";
 	width: 70vmax;
 	height: 70vmax;
-	position: absolute;
+	position: fixed;
 	background: rgba(0, 0, 0, 0.07);
 	animation: morph 30s linear infinite alternate, spin 20s linear infinite, gradiente1 60s linear infinite alternate;
     transition: background 1s;
