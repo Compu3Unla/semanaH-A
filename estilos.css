@@ -17,18 +17,38 @@ body {
     font-family: Barlow;
 }
 
-@keyframes iconos-girando {
-    from {
-        transform: rotate(1deg);
+@keyframes iconos-titilando {
+    0% {
+        transform: scale(1) ;
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(0.8);
     }
 
-    to {
-        transform: rotate(360deg);
-    }
 }
 
-.animacion-girando {
-    animation: iconos-girando 50s infinite;
+@keyframes iconos-titilando-1 {
+    0% {
+        transform: scale(1) ;
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+
+}
+
+.animacion-titilando {
+    animation: iconos-titilando 1.5s steps(3, end) infinite;
+}
+
+.animacion-titilando-1 {
+    animation: iconos-titilando-1 1.5s steps(3, end) infinite;
 }
 
 /******* NAV ******/
@@ -53,7 +73,6 @@ header div {
     padding-left: 30px;
     justify-content: space-between;
     align-items: center;
-    border-radius: 55px;
     background: #000;
     flex-wrap: wrap;
 }
@@ -77,7 +96,6 @@ nav a {
     transition: all 0.3s ease;
     align-self: stretch;
     align-items: center;
-    border-radius: 57px;
 }
 
 nav a:hover {
@@ -100,7 +118,6 @@ header li {
     justify-content: center;
     align-items: center;
     gap: 5px;
-    border-radius: 22.649px;
     border: 0.755px solid #000;
     background: #F0F0F0;
 }
@@ -158,7 +175,6 @@ main {
     padding: 10px 20px;
     justify-content: center;
     align-items: center;
-    border-radius: 50px;
     border: 3px solid #000;
     color: #000;
     font-family: Barlow;
@@ -173,7 +189,6 @@ main {
     padding: 16px 32px;
     flex-direction: column;
     align-items: flex-start;
-    border-radius: 50px;
     border: 3px solid #000;
 }
 
@@ -182,7 +197,6 @@ main {
     padding: 16px 0px;
     justify-content: center;
     gap: 10px;
-    border-radius: 37px;
     border: 3px solid #000;
     font-size: 31.714px;
     font-style: normal;
@@ -294,7 +308,6 @@ summary h3 {
     display: flex;
     padding: 10px 25px;
     align-items: center;
-    border-radius: 30px;
     background: #000;
     color: #F0F0F0;
     font-family: Barlow;
@@ -339,7 +352,6 @@ time {
 .hora p {
     width: 100%;
     text-align: center;
-    border-radius: 30px;
     border: 1px solid #000;
     padding: 4px 0;
 }
@@ -431,7 +443,6 @@ time {
         justify-content: center;
         align-items: center;
         padding: 10px 0 0 0;
-        border-radius: 85px;
     }
 
     nav a {
@@ -487,7 +498,6 @@ time {
     #fecha-mobile {
         display: flex;
         padding: 10px 20px;
-        border-radius: 37px;
         background-color: #000;
         color: #F0F0F0;
         font-size: 1.1rem;
@@ -509,7 +519,6 @@ time {
         padding: 7px 15px;
         justify-content: center;
         align-items: center;
-        border-radius: 50px;
         border: 2px solid;
         font-size: 1rem;
         font-weight: 600;
@@ -519,7 +528,6 @@ time {
     #index-main-mobile article img {
         display: flex;
         padding: 0px 17px;
-        border-radius: 50px;
         border: 2px solid;
     }
 
