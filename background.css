@@ -1,5 +1,23 @@
 
-body {
+html {
+    background-image: url(img/fondo_pixel.png) ;
+    background-repeat: repeat-y;      
+    background-size: 100% auto;       
+    background-position: top left; 
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 700px) {
+
+   html {
+    background-image: url(img/fondo_pixel_celular.png);
+   } 
+
+}
+
+
+
+/* body {
     background: #F0F0F0;
 	overflow-x: hidden;
     background-attachment: fixed;
