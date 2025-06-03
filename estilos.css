@@ -42,11 +42,11 @@ body {
 }
 
 .animacion-titilando {
-    animation: iconos-titilando 1.5s steps(3, end) infinite;
+    animation: iconos-titilando 1.8s steps(3, end) infinite;
 }
 
 .animacion-titilando-1 {
-    animation: iconos-titilando-1 1.5s steps(3, end) infinite;
+    animation: iconos-titilando-1 1.8s steps(3, end) infinite;
 }
 
 /******* NAV ******/
@@ -399,7 +399,7 @@ time {
     padding: 4px 0;
 }
 
-.actividades svg {
+.actividades img {
     margin-top: 22px;
 }
 
